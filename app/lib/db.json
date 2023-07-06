@@ -1,0 +1,71 @@
+{
+    "recetas": [
+      {
+        "id": 1,
+        "nombre": "Pasta Alfredo",
+        "ingredientes": [
+          "250 g de pasta fettuccine",
+          "2 tazas de crema de leche",
+          "1 taza de queso parmesano rallado",
+          "4 cucharadas de mantequilla",
+          "Sal y pimienta al gusto"
+        ],
+        "instrucciones": [
+          "Cocina la pasta según las instrucciones del paquete.",
+          "En una sartén grande, derrite la mantequilla a fuego medio.",
+          "Agrega la crema de leche y cocina hasta que esté caliente pero no hirviendo.",
+          "Añade el queso parmesano rallado y mezcla hasta que se derrita y la salsa esté suave.",
+          "Sazona con sal y pimienta al gusto.",
+          "Vierte la salsa sobre la pasta cocida y mezcla bien.",
+          "Sirve caliente y disfruta."
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Ensalada César",
+        "ingredientes": [
+          "1 lechuga romana",
+          "1 taza de croutones",
+          "1/2 taza de queso parmesano rallado",
+          "2 filetes de anchoa (opcional)",
+          "3 cucharadas de aceite de oliva",
+          "2 cucharadas de jugo de limón",
+          "1 diente de ajo picado",
+          "Sal y pimienta al gusto"
+        ],
+        "instrucciones": [
+          "Lava y corta la lechuga en trozos.",
+          "En un tazón grande, mezcla el aceite de oliva, el jugo de limón, el ajo picado, la sal y la pimienta para hacer el aderezo.",
+          "Agrega la lechuga al tazón y revuelve para cubrir con el aderezo.",
+          "Añade los croutones y el queso parmesano rallado.",
+          "Si lo deseas, puedes añadir los filetes de anchoa y mezclar bien.",
+          "Sirve y disfruta de la ensalada César."
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "Sopa de Tomate",
+        "ingredientes": [
+          "1 kg de tomates maduros",
+          "1 cebolla picada",
+          "2 dientes de ajo picados",
+          "2 zanahorias picadas",
+          "4 tazas de caldo de verduras",
+          "2 cucharadas de aceite de oliva",
+          "Sal y pimienta al gusto",
+          "Hojas de albahaca fresca para decorar"
+        ],
+        "instrucciones": [
+          "Calienta el aceite de oliva en una olla grande.",
+          "Agrega la cebolla y el ajo picados y cocina hasta que estén dorados.",
+          "Añade los tomates picados y las zanahorias picadas. Cocina por unos minutos hasta que los tomates se ablanden.",
+          "Vierte el caldo de verduras y sazona con sal y pimienta al gusto.",
+          "Lleva la sopa a ebullición, luego reduce el fuego y cocina a fuego lento durante unos 20 minutos.",
+          "Retira la sopa del fuego y deja que se enfríe un poco.",
+          "Usando una licuadora o una batidora de inmersión, mezcla la sopa hasta obtener una textura suave.",
+          "Vuelve a calentar la sopa si es necesario antes de servir.",
+          "Decora con hojas de albahaca fresca y sirve caliente."
+        ]
+      }
+    ]
+  }
