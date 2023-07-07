@@ -1,14 +1,8 @@
 import RecipeList from "../components/RecipeList";
-import recipesData from "../lib/db.json";
 
-async function getData() {
-  const res = recipesData;
-
-  return res;
-}
 
 export default async function Recipe() {
-  const data = await getData();
+  
 
   return (
     <main className="container">
@@ -23,7 +17,7 @@ export default async function Recipe() {
           className="p-3 bg-indigo-900 text-white text-lg font-semibold placeholder-indigo-200 border-white border bg-transparent rounded outline-none"
         />
       </section>
-      <RecipeList recipes={data.recetas} />
+      <RecipeList/>
     </main>
   );
 }

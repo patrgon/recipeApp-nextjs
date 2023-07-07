@@ -1,16 +1,21 @@
-import React from "react";
 import Recipe from "./Recipe";
+import recipesData from "../lib/db.json";
 
-export default function RecipeList({ recipes }) {
+async function getData() {
+  const res = recipesData;
+
+  return res;
+}
+
+export default async function RecipeList({ recipes }) {
+  const data = await getData();
   return (
     <section className="mt-5 p-5 bg-indigo-600 flex flex-col rounded">
       <p className="text-white font-bold text-lg uppercase text-center m-2">
         Lista de recetas
       </p>
-      {recipes.map((recipe) => (
-        <div key={recipe.id} className="bg-white p-5 m-2 rounded-md cursor-pointer hover:bg-teal-500">
-          <p className="font-bold uppercase text-teal-950">{recipe.nombre}</p>
-        </div>
+      {data.recetas.map((recipe) => (
+        <Recipe recipe={recipe} />
       ))}
     </section>
   );
