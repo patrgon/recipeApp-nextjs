@@ -8,7 +8,7 @@ export default function RecipeList({ recipes }) {
         Lista de recetas
       </p>
       {recipes.map((recipe) => (
-        <div className="bg-white p-5 m-2 rounded-md cursor-pointer hover:bg-teal-500">
+        <div key={recipe.id} className="bg-white p-5 m-2 rounded-md cursor-pointer hover:bg-teal-500">
           <p className="font-bold uppercase text-teal-950">{recipe.nombre}</p>
         </div>
       ))}
