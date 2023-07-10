@@ -14,15 +14,16 @@ export default async function Home() {
         <div className="flex gap-4 items-center justify-center">
           <Image
             src="/next-logo.png"
-            width={150}
-            height={200}
-            alt="Picture of the author"
+            width={200}
+            height={250}
+            priority={true}
+            alt="next logo"
           />
           <Image
             src="/tailwind-logo.png"
-            width={300}
+            width={300} 
             height={200}
-            alt="Picture of the author"
+            alt="tailwind logo"
           />
         </div>
       </section>
