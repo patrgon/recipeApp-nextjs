@@ -12,6 +12,13 @@ export default function SearchBar({ recipes, setRecipesFiltered }) {
     setRecipesFiltered(search);
   };
 
+  const searchRecipe = (text) => {
+    var search = recipes.filter(recipe => recipe.nombre.toLowerCase().includes(text.toLowerCase()));
+
+    setRecipeInput(text);
+    setRecipesFiltered(search);
+  }
+
   return (
     <form
       action=""
@@ -22,7 +29,7 @@ export default function SearchBar({ recipes, setRecipesFiltered }) {
         type="text"
         placeholder="Ingrese su busqueda"
         className="p-3 bg-indigo-900 text-white text-lg font-semibold placeholder-indigo-200 border-white border bg-transparent rounded outline-none w-full"
-        onChange={(e) => {setRecipeInput(e.target.value)}}
+        onChange={(e) => {searchRecipe(e.target.value)}}
       />
       <input
         type="submit"
