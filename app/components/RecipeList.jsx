@@ -1,21 +1,17 @@
+'use client'
 import Recipe from "./Recipe";
 import recipesData from "../lib/db.json";
+import { useEffect, useState } from "react";
 
-async function getData() {
-  const res = recipesData;
+export default function RecipeList({recipesFiltered}) {
 
-  return res;
-}
-
-export default async function RecipeList({ recipes }) {
-  const data = await getData();
   return (
     <section className="mt-5 p-5 bg-indigo-600 flex flex-col rounded">
       <p className="text-white font-bold text-lg uppercase text-center m-2">
         Lista de recetas
       </p>
-      {data.recetas.map((recipe) => (
-        <Recipe recipe={recipe} />
+      {recipesFiltered.map((recipe) => (
+        <Recipe recipe={recipe} key={recipe.id}/>
       ))}
     </section>
   );

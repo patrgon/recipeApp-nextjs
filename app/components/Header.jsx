@@ -13,7 +13,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="p-4 border-b border-indigo-400 mb-6">
+    <header className="p-4 border-b border-indigo-400 mb-6 w-full flex items-center justify-center">
       <nav>
         <ul className="flex gap-4 list-none">
           {links.map(({ label, route }) => (
