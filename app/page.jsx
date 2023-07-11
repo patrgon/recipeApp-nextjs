@@ -11,11 +11,11 @@ export default async function Home() {
           Aplicación desarrollada con Next.js y Tailwind CSS.
         </p>
 
-        <div className="flex gap-4 items-center justify-center">
+        <div className="flex gap-4 items-center justify-center max-lg:flex-col ">
           <Image
             src="/next-logo.png"
             width={200}
-            height={250}
+            height={200}
             priority={true}
             alt="next logo"
           />
